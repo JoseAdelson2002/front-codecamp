@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main id="main-doc">
+        <section id="Introdução" class="main-section">
+            <header id="Introdução">
+                Introdução
+            </header>
+            <p>Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a
+                objetos, funcional, de tipagem dinâmica e forte. Foi lançada por Guido van Rossum em 1991.
+                Atualmente, possui um modelo de desenvolvimento comunitário, aberto e gerenciado pela organização sem
+                fins lucrativos Python Software Foundation. Apesar de várias partes da linguagem possuírem padrões e
+                especificações formais, a linguagem, como um todo, não é formalmente especificada. O padrão na pratica é
+                a implementação CPython.</p>
+            <p>O nome Python teve a sua origem no grupo humorístico britânico Monty Python, criador do programa Monty
+                Python's Flying Circus, embora muitas pessoas façam associação com o réptil do mesmo nome (em português,
+                píton ou pitão).</p>
+        </section>
+        <section id="História" class="main-section">
+            <header id="História">
+                História
+            </header>
+            <p>O Python foi concebido no final de 1989 por Guido van Rossum no Instituto de Pesquisa Nacional para
+                Matemática e Ciência da Computação (CWI), nos Países Baixos, como um sucessor da ABC capaz de tratar
+                exceções e prover interface com o sistema operacional Amoeba através de scripts. Também da CWI, a
+                linguagem ABC era mais produtiva que C, ainda que com o custo do desempenho em tempo de execução. Mas
+                ela não possuía funcionalidades importantes para a interação com o sistema operacional, uma necessidade
+                do grupo. Um dos focos primordiais de Python era aumentar a produtividade do programador.</p>
+            <p>Python foi feita com base na linguagem ABC, possui parte da sintaxe derivada do C, compreensão de listas,
+                funções anonimas e função map de Haskell. Os iteradores são baseados na Icon, tratamentos de exceção e
+                módulos da Modula-3, expressões regulares de Perl.</p>
+        </section>
+        <section id="Filosofia" class="main-section">
+            <header id="Filosofia">
+                Filosofia
+            </header>
+            <p>Parte da cultura da linguagem gira ao redor de The Zen of Python, um poema que faz parte do documento
+                "PEP 20 (The Zen of Python)", escrito pelo programador em Python de longa data Tim Peters,
+                descrevendo sumariamente a filosofia do Python. Entre os vinte princípios do poema, estão presentes:</p>
+            <ul>
+                <li>Bonito é melhor que feio;</li>
+                <li>Explícito é melhor que implícito;</li>
+                <li>Simples é melhor que complexo;</li>
+                <li>Complexo é melhor que complicado;</li>
+                <li>Legibilidade faz diferença.</li>
+            </ul>
+            <p>Pode-se vê-lo através de um <i>easter egg</i> do Python pelo comando:</p>
+            <div class="codigo"><code>>>> import this</code></div>
+        </section>
+        <section id="Sintaxe_e_semântica" class="main-section">
+            <header id="Sintaxe_e_semântica">
+                Sintaxe e semântica
+            </header>
+            <p>Construções de Python incluem: estrutura de seleção (if, else, elif); estrutura de repetição (for,
+                while), que itera por um container, capturando cada elemento em uma variável local dada; construção de
+                classes (class); construção de sub-rotinas (def); construção de escopo (with), como por exemplo para
+                adquirir um recurso.</p>
+            <p>O interpretador interativo é uma característica diferencial da linguagem, porque há a possibilidade de
+                testar o código de um programa e receber o resultado em tempo real, antes de iniciar a compilação ou
+                incluí-las nos programas. Por exemplo:</p>
+            <div class="codigo"><code>>>> 1+1
+                <br>2
+                <br>>>>
+                <br>>>> a = 1+1
+                <br>>>> print a
+                <br>2
+                <br>>>> print(a)
+                <br>2
+                <br>>>></code></div>
+            <p>Todo programa é dividido em linhas lógicas que são separadas pelo token NEWLINE ou NOVA LINHA, as linhas
+                físicas são trechos de código divididos pelo caractere ENTER. Linhas lógicas não podem ultrapassar
+                linhas físicas com exceção de junção de linhas, por exemplo:</p>
+            <div class="codigo"><code>MESES_DO_ANO = ['janeiro', 'fevereiro', 'março',
+                'abril',   'maio',      'junho',
+                'julho',   'agosto',    'setembro',
+                'outubro', 'novembro',  'dezembro']</code></div>
+        </section>
+        <section id="Exemplos" class="main-section">
+            <header id="Exemplos">
+                Exemplos
+            </header>
+            <p>Programa Olá Mundo:</p>
+            <div class="codigo"><code>print('Olá, Mundo!')</code></div>
+            <p>Algoritmo de Trabb Pardo-Knuth:</p>
+            <div class="codigo"><code>from math import sqrt
+                <br>
+                <br>def f(t):
+                <br>    return sqrt(abs(t)) + 5 * t ** 3
+                
+                <br>a = [float(input()) for _ in range(11)]
+                <br>for i, t in reversed(list(enumerate(a))):
+                <br>    y = f(t)
+                <br>    print(i, 'TOO LARGE' if y > 400 else y)</code></div>
+        </section>
+        <section id="Referência" class="main-section">
+            <header id="Referência">
+                Referência
+            </header>
+            <p>Para mais informações, acesse <a id="sem" href="https://pt.wikipedia.org/wiki/Python"
+                    target="_blank">link</a>
+            </p>
+        </section>
+        <div class="coluna"></div>
+        <nav id="navbar">
+            <header class="linhas">Python</header>
+            <div class="linhas">
+                <a href="#Introdução" class="nav-link">Introdução</a>
+            </div>
+            <div class="linhas">
+                <a href="#História" class="nav-link">História</a>
+            </div>
+            <div class="linhas">
+                <a href="#Filosofia" class="nav-link">Filosofia</a>
+            </div>
+            <div class="linhas">
+                <a href="#Sintaxe_e_semântica" class="nav-link">Sintaxe e Semântica</a>
+            </div>
+            <div class="linhas">
+                <a href="#Exemplos" class="nav-link">Exemplos</a>
+            </div>
+            <div class="linhas">
+                <a href="#Referência" class="nav-link">Referência</a>
+            </div>
+        </nav>
+    </main>
+</body>
+
+</html>

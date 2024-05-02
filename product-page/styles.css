@@ -1,0 +1,137 @@
+* {
+    color: #d5eb0fe7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.grid_cabecalho {
+    display: grid;
+    grid-template-columns: auto 40%;
+    justify-content: space-between;
+    position: relative;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+}
+
+.grid_nav {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+    margin-top: 30px;
+}
+
+a:hover {
+    color: green;
+}
+
+.topicos {
+    margin-left: 30%;
+    margin-bottom: 3%;
+}
+
+.topicos p {
+    margin-top: 0;
+    margin-right: 30%;
+}
+
+.topicos h1 {
+    margin-bottom: 2px;
+}
+
+#primeiroh1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 150px;
+}
+
+.formulario input {
+    display: flex;
+    margin-left: 45%;
+}
+
+.formulario input[name="btn"] {
+    margin-left: 48%;
+    margin-top: 15px;
+    color: black;
+}
+
+.formulario input[name="btn"]:hover {
+    background-color: green;
+}
+
+.video {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.precos_pianos {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.precos_pianos h3 {
+    background-color: gray;
+    margin-top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.precos_pianos button {
+    width: 70px;
+    height: 25px;
+    color: black;
+    background-color: #d5eb0fe7;
+}
+
+.precos_pianos button:hover {
+    cursor: pointer;
+    background-color: #afc6b7;
+}
+
+.preco1 {
+    width: 300px;
+    height: 300px;
+    border: 2px solid white;
+    margin-right: 10px;
+}
+
+.preco2 {
+    width: 300px;
+    height: 300px;
+    border: 2px solid white;
+    margin-right: 10px;
+}
+
+.preco3 {
+    width: 300px;
+    height: 300px;
+    border: 2px solid white;
+}
+
+@media (max-width:300px) {
+    img {
+        width: 100px
+    }
+}
